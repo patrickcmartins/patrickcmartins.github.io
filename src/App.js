@@ -5,7 +5,7 @@ import {
   ShieldCheck, 
   GitBranch, 
   FolderOpen, 
-  GraduationCap,
+  // GraduationCap,
   ArrowRight,
   Menu,
   X,
@@ -44,13 +44,13 @@ export default function App() {
     transition: { duration: 0.6 }
   };
 
-  const staggerChildren = {
-    animate: {
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
+  // const staggerChildren = {
+  //   animate: {
+  //     transition: {
+  //       staggerChildren: 0.15
+  //     }
+  //   }
+  // };
 
   const handleDemoRequest = (e) => {
     e.preventDefault();
@@ -757,7 +757,7 @@ export default function App() {
               <ul className="space-y-3">
                 {['Pagamentos', 'Compliance Legal', 'Automação', 'Centralização'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors flex items-center">
+                    <a href="#!" className="text-gray-300 hover:text-purple-400 transition-colors flex items-center">
                       <ArrowRight className="w-4 h-4 mr-2" /> {item}
                     </a>
                   </li>
@@ -770,7 +770,7 @@ export default function App() {
               <ul className="space-y-3">
                 {['MultiGateway', 'LGPD/ECA', 'Workflows', 'Canais Unificados', 'Suporte 24/7'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors flex items-center">
+                    <a href="#!" className="text-gray-300 hover:text-purple-400 transition-colors flex items-center">
                       <ArrowRight className="w-4 h-4 mr-2" /> {item}
                     </a>
                   </li>
